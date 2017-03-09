@@ -1,0 +1,17 @@
+* openbsd-ldapd
+
+This is a very simple and practical LDAP server that was extracted
+from the OpenBSD sources to be trialed on non-OpenBSD systems.
+
+The original sources were checked out using =git-cvsimport= as
+follows:
+
+#+BEGIN_SRC sh
+  cvs -qd anoncvs@anoncvs.ca.openbsd.org:/cvs get -P src/usr.sbin/ldapd
+  cd src/usr.sbin/ldapd
+  git cvsimport
+#+END_SRC
+
+This import happened on <2017-03-08 Wed>. The license is listed
+per-file and is the general OpenBSD one, and anything not documented
+properly is assumed to be under the LICENSE file.
